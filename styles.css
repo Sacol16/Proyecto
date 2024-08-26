@@ -17,7 +17,21 @@
     box-sizing: border-box;
 }
 
-.btn{
+.btn_sea{
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn_sho{
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn_use{
     outline: none;
     border: none;
     transition: 0.3s;
@@ -171,9 +185,23 @@ nav{
         gap: 1rem;
     }
 
-    .nav_btns .btn{
+    .nav_btns .btn_sea{
         font-size: 1.5rem;
         color: var(--text-dark);
         background-color: transparent;
     }
+
+    .nav_btns .btn_sho{
+        font-size: 1.5rem;
+        color: var(--text-dark);
+        background-color: transparent;
+    }
+
+    .nav_btns .btn_use{
+        font-size: 1.5rem;
+        color: var(--text-dark);
+        background-color: transparent;
+    }
+
+    
 }
