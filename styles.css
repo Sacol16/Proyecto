@@ -2,9 +2,12 @@
 
 :root{
 
-    --primary-color: #f3eae5;
-    --text-dark: #2c2724;
-    --white: #ffffff;
+    --primary-color: #F7F7F7;
+    --beige: #D9CBB8;
+    --rose: #C69FA5;
+    --gray: #333333;
+    --text-dark: #1A1A1A;
+    --accent: #2A7F7F;
     --max-width: 1200px;
 }
 
@@ -54,12 +57,12 @@ nav{
 .nav_logo a{
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--white);
+    color: var(--beige);
 }
 
 .nav_menu_btn{
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--beige);
     cursor: pointer;
 }
 
@@ -91,8 +94,9 @@ nav{
 }
 
 .nav_links a:hover{
-    color: var(--white);
+    color: var(--beige);
 }
+
 
 .nav_btns{
     display: none;
@@ -133,7 +137,31 @@ nav{
     }
 
     .nav_links a{
-        color:var(--text-dark)
+        position: relative;
+        display: inline-block;
+        color:var(--text-dark);
+        transition: color 0.3s ease;
+    }
+
+    .nav_links a::after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--text-dark);
+        transition: width 0.3s ease, left 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    .nav_links a:hover{
+        color: var(--accent);
+    }
+
+    .nav_links a:hover::after{
+        width: 100%;
+        left: 50%;
     }
 
     .nav_btns{
