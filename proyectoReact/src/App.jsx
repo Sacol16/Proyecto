@@ -1,14 +1,13 @@
 import React from 'react';
 import NavBar from './components/NavBar';
+import MainContent from './components/MainContent'; 
+import './styles/styles.css';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* Puedes agregar más componentes o contenido aquí */}
-      <div className="container">
-        {/* Contenido principal de tu página */}
-      </div>
+      <MainContent /> {/* Asegúrate de incluir MainContent aquí */}
     </div>
   );
 }

@@ -19,6 +19,7 @@ const NavBar = () => {
           <i className={menuOpen ? 'ri-close-line' : 'ri-menu-line'}></i>
         </div>
       </div>
+      
       <ul className={`nav_links ${menuOpen ? 'open' : ''}`} id="nav-links">
         <li>
           <a href="#">LIVING</a>
@@ -36,31 +37,8 @@ const NavBar = () => {
           <a href="#">OUTDOOR</a>
           <DropdownMenu menu="OUTDOOR" />
         </li>
-        <li>
-          <a href="#">LIGHTING</a>
-          <DropdownMenu menu="LIGHTING" />
-        </li>
-        <li>
-          <a href="#">DECOR</a>
-          <DropdownMenu menu="DECOR" />
-        </li>
-        <li>
-          <a href="#">RUGS</a>
-          <DropdownMenu menu="RUGS" />
-        </li>
-        <li>
-          <a href="#">OFFICE</a>
-          <DropdownMenu menu="OFFICE" />
-        </li>
-        <li>
-          <a href="#">SALE</a>
-          <DropdownMenu menu="SALE" />
-        </li>
-        <li>
-          <a href="#">DESIGN</a>
-          <DropdownMenu menu="DESIGN" />
-        </li>
       </ul>
+      
       <div className="nav_btns">
         <NavButton
           defaultIcon="ri-search-2-line"
