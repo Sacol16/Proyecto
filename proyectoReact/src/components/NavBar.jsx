@@ -1,9 +1,20 @@
-import React, { useState } from 'react';
-import NavButton from './NavButton.jsx';
+import React, { useEffect, useState } from 'react';
 import DropdownMenu from './DropMenu.jsx';
+import NavButton from './NavButton.jsx';
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css';
+    document.head.appendChild(link);
+
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []);
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
@@ -36,39 +47,15 @@ const NavBar = () => {
           <a href="#">OUTDOOR</a>
           <DropdownMenu menu="OUTDOOR" />
         </li>
-        <li>
-          <a href="#">LIGHTING</a>
-          <DropdownMenu menu="LIGHTING" />
-        </li>
-        <li>
-          <a href="#">DECOR</a>
-          <DropdownMenu menu="DECOR" />
-        </li>
-        <li>
-          <a href="#">RUGS</a>
-          <DropdownMenu menu="RUGS" />
-        </li>
-        <li>
-          <a href="#">OFFICE</a>
-          <DropdownMenu menu="OFFICE" />
-        </li>
-        <li>
-          <a href="#">SALE</a>
-          <DropdownMenu menu="SALE" />
-        </li>
-        <li>
-          <a href="#">DESIGN</a>
-          <DropdownMenu menu="DESIGN" />
-        </li>
       </ul>
       <div className="nav_btns">
         <NavButton
-          defaultIcon="ri-search-2-line"
+          defaultIcon="ri-search-line"
           hoverIcon="ri-search-fill"
           className="btn_sea"
         />
         <NavButton
-          defaultIcon="ri-shopping-bag-4-line"
+          defaultIcon="ri-shopping-bag-line"
           hoverIcon="ri-shopping-bag-fill"
           className="btn_sho"
         />
