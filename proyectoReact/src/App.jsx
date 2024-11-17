@@ -1,13 +1,16 @@
 import React from 'react';
 import NavBar from './components/NavBar';
 import MainContent from './components/MainContent'; 
-import './styles/styles.css';
+import './styles/components/DropMenu.css';
+import './styles/components/NavBar.css';
+import './styles/components/MainContent.css';
+import './styles/components/NavButton.css';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <MainContent /> {/* Asegúrate de incluir MainContent aquí */}
+      <MainContent />
     </div>
   );
 }
