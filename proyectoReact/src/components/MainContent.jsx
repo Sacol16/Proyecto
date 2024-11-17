@@ -2,32 +2,61 @@ import React from 'react';
 
 const MainContent = () => {
   return (
-    <div className="main">
-      <div className="small">
-        <p className="title">3D Design Tool</p>
-        <img className="smallImage" src="proyectoReact\src\assets\display.png" alt="Landing image" />
-        <p className="msg">
-          Introducing our innovative 3D Design Tool – now you can visualize your dream space with our furniture in a
-          virtual room that matches your home. Drag, drop, and customize to see how each piece fits perfectly in your
-          space. With realistic textures, multiple viewing angles, and even augmented reality integration, designing
-          your perfect room has never been easier. Start creating your dream home today with just a few clicks!
-        </p>
-        <button className="cta">Try now</button>
+    <div className="main-content">
+      {/* Hero Section for Living */}
+      <div className="hero-section">
+        <img
+          src="https://www.cielohome.co.uk/154477-large_default/peyton-acacia-wood-coffee-table.jpg"
+          alt="Living Room"
+          className="hero-image"
+        />
+        <div className="hero-overlay">
+          <p className="hero-subtitle">COZYLUXE QUALITY WOOD</p>
+          <h1 className="hero-title">STYLE FOR THE SEASON</h1>
+          <button className="hero-button">SHOP LIVING</button>
+        </div>
       </div>
 
-      <div className="left">
-        <p className="title">3D Design Tool</p>
-        <p className="msg">
-          Introducing our innovative 3D Design Tool – now you can visualize your dream space with our furniture in a
-          virtual room that matches your home. Drag, drop, and customize to see how each piece fits perfectly in your
-          space. With realistic textures, multiple viewing angles, and even augmented reality integration, designing
-          your perfect room has never been easier. Start creating your dream home today with just a few clicks!
-        </p>
-        <button className="cta">Try now</button>
+      {/* Hero Section for Dining */}
+      <div className="hero-section">
+        <img
+          src="https://www.robeys.co.uk/wp-content/uploads/2022/09/la-rochere.jpg"
+          alt="Dining Room"
+          className="hero-image"
+        />
+        <div className="hero-overlay">
+          <p className="hero-subtitle">ELEVATE YOUR DINING</p>
+          <h1 className="hero-title">DINING IN STYLE</h1>
+          <button className="hero-button">SHOP DINING</button>
+        </div>
       </div>
 
-      <div className="right">
-        <img src="/assets/display.png" alt="Landing image" />
+      {/* Hero Section for Bedroom */}
+      <div className="hero-section">
+        <img
+          src="https://www.decorilla.com/online-decorating/wp-content/uploads/2023/06/Bedroom-interior-design-ideas-for-relaxation.jpg"
+          alt="Bedroom"
+          className="hero-image"
+        />
+        <div className="hero-overlay">
+          <p className="hero-subtitle">REST IN LUXURY</p>
+          <h1 className="hero-title">YOUR DREAM BEDROOM</h1>
+          <button className="hero-button">SHOP BEDROOM</button>
+        </div>
+      </div>
+
+      {/* Hero Section for Outdoor */}
+      <div className="hero-section">
+        <img
+          src="https://www.ikea.com/global/assets/range-categorisation/images/three-seat-sofas-10670.jpeg"
+          alt="Outdoor Space"
+          className="hero-image"
+        />
+        <div className="hero-overlay">
+          <p className="hero-subtitle">ENJOY THE OUTDOORS</p>
+          <h1 className="hero-title">FRESH AIR, GREAT DESIGN</h1>
+          <button className="hero-button">SHOP OUTDOOR</button>
+        </div>
       </div>
     </div>
   );
